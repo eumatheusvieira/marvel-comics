@@ -1,0 +1,10 @@
+.slideContainer {
+    margin-top: .5em;
+    display: flex;
+    height: 60vh;
+}
+
+.slideContainer img {
+    object-fit: cover;
+    width: 100%;
+}
