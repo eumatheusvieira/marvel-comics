@@ -5,6 +5,7 @@ import './Home.css';
 import axios from 'axios';
 import md5 from 'md5'
 import Loader from '../Loader/Loader.tsx';
+import Footer from '../../components/Footer.tsx';
 const publicKey = import.meta.env.VITE_PUBLICKEY
 const privateKey = import.meta.env.VITE_PRIVATEKEY
 const time = Number(new Date());
@@ -55,6 +56,7 @@ export default function Home() {
               )}
             </div>
           </div>
+          <Footer />
         </div>
       }
     </>

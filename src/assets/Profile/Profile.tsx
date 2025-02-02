@@ -1,3 +1,4 @@
+import Footer from '../../components/Footer'
 import Navbar from '../../components/Navbar'
 import './Profile.css'
 
@@ -16,6 +17,7 @@ export default function Profile() {
           <a href="">Criar Conta</a>
         </div>
       </div>
+      <Footer />
     </>
   )
 }

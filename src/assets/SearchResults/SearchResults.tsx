@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import Loader from "../Loader/Loader";
 import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
 
 export default function Search() {
     const publicKey = import.meta.env.VITE_PUBLICKEY
@@ -42,7 +43,7 @@ export default function Search() {
             {loading ? <Loader /> : 
                     <div>
                     <Navbar />
-                    <h1 className='title'>Resultado para pesquisa {searchItem}</h1>
+                    <h1 className='title'>Resultado para pesquisa: {searchItem}</h1>
                     <div className='comicsContainer'>
                         <div className='comics'>
                         {searchValue.length > 0 ? (
@@ -57,10 +58,11 @@ export default function Search() {
                                 </div>
                             )
                         ) : (
-                            <p>No results found for "{searchItem}".</p>
+                            <p>No results found for: "{searchItem}".</p>
                         )}
                         </div>
                     </div>
+                <Footer />
             </div>}
         </>
     )
